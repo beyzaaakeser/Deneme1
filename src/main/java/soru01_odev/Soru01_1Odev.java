@@ -18,9 +18,8 @@ public class Soru01_1Odev {
 
         List<Integer> list = new ArrayList<>();
 
-
-        while (true) {
-
+        boolean a =true;
+        while (a) {
             System.out.println("Oge eklemek icin E'yi\nOge silmek icin S'yi\nOge guncellemek icin G'u\nCikis yapmak icin C'yi giriniz");
 
             String secim = input.next().toUpperCase();
@@ -36,7 +35,7 @@ public class Soru01_1Odev {
                 case "S":
                     System.out.println("Lutfen silmek istediginiz ogeyi girinz.");
                     int oge2 = input.nextInt();
-                    list.remove(oge2);
+                    list.remove((Integer) oge2);
                     System.out.println("Silmek istediginiz oge listeden basariyla silindi");
                     System.out.println("Listenin guncel hali : "+list);
                     break;
@@ -52,29 +51,16 @@ public class Soru01_1Odev {
                         System.out.println("Listenin guncel hali : "+list);
                     }
                     break;
+                case "C":
+                    a=false;
+                    System.out.println("Cikis yapildi");
+                    break;
+                default:
+                    System.out.println("Hatali veri girdiniz");
 
             }
-            if (secim=="C"){
-                break;
-            }
-
-
-
 
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 
