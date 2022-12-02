@@ -11,12 +11,13 @@ public class Methodlar {
     static HashMap<Integer,Veriler> urunler = new HashMap<>();
 
     public static void urunTanimla(){
+
         System.out.println("Tanimlamak istediginiz urunun ID numarasini giriniz");
         int iD = input.nextInt();
         System.out.println("Tanimlamak istediginiz urunun ismini giriniz");
-        String urunIsim = input.next();
-        System.out.println("Tanimlamak istediginiz urunun ureticisini giriniz");
         input.nextLine();
+        String urunIsim = input.nextLine();
+        System.out.println("Tanimlamak istediginiz urunun ureticisini giriniz");
         String ureten= input.nextLine();
         System.out.println("Tanimlamak istediginiz urunun miktarini giriniz");
         int miktar= input.nextInt();
@@ -35,6 +36,8 @@ public class Methodlar {
         }else {
             System.out.println("Hatali giris yaptiniz");
         }
+        input.nextLine();
+
     }
 
     public static void urunListele(){
