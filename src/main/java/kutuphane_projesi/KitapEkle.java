@@ -1,4 +1,4 @@
-package slack_kutuphane_projesi;
+package kutuphane_projesi;
 
 import java.util.HashMap;
 import java.util.Scanner;

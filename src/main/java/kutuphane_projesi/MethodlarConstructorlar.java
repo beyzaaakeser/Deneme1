@@ -1,9 +1,8 @@
-package slack_kutuphane_projesi;
-import java.util.HashMap;
+package kutuphane_projesi;
 import java.util.Map;
 import java.util.Scanner;
 
-import static slack_kutuphane_projesi.KitapEkle.kitapMap;
+import static kutuphane_projesi.KitapEkle.kitapMap;
 
 public class MethodlarConstructorlar {
 

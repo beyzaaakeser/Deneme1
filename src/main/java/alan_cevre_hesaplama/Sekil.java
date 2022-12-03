@@ -1,4 +1,4 @@
-package slack_alan_cevre_sorusu;
+package alan_cevre_hesaplama;
 
 public class Sekil {
 

@@ -1,6 +1,4 @@
-package slack_depo_projesi;
-
-import java.util.Scanner;
+package depo_projesi;
 
 public class DepoRunner {
 

@@ -1,4 +1,4 @@
-package slack_kutuphane_projesi;
+package kutuphane_projesi;
 public class Kitap {
 
     static int kitapNo;

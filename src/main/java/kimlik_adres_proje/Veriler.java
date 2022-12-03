@@ -1,4 +1,4 @@
-package slack_kimlik_adres_sorusu;
+package kimlik_adres_proje;
 
 public class Veriler {
 

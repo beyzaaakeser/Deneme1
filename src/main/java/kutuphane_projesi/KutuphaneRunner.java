@@ -1,6 +1,4 @@
-package slack_kutuphane_projesi;
-
-import java.util.Map;
+package kutuphane_projesi;
 
 public class KutuphaneRunner {
 

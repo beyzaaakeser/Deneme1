@@ -1,8 +1,6 @@
-package slack_kimlik_adres_sorusu;
+package kimlik_adres_proje;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Scanner;
 
 public class MethodlarConstructorlar {

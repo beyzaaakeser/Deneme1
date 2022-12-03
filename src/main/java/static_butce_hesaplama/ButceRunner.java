@@ -1,4 +1,4 @@
-package static_butce_sorusu;
+package static_butce_hesaplama;
 
 public class ButceRunner {
     public static void main(String[] args) {

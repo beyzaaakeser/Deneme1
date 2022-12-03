@@ -1,4 +1,4 @@
-package slack_depo_projesi;
+package depo_projesi;
 
 import java.util.HashMap;
 import java.util.Scanner;

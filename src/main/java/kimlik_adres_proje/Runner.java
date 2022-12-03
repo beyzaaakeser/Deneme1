@@ -1,7 +1,4 @@
-package slack_kimlik_adres_sorusu;
-
-import java.util.HashMap;
-import java.util.Scanner;
+package kimlik_adres_proje;
 
 public class Runner {
 
