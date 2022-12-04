@@ -1,9 +1,9 @@
 package okul_yonetim_projesi;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-    public class OgrenciMethod {
+
+public class OgrenciMethod {
 
         static HashMap<String,Ogrenci> ogrenciMap = new HashMap<>();
         static Scanner input = new Scanner(System.in);
@@ -23,7 +23,6 @@ import java.util.Scanner;
             System.out.println("Lutfen eklemek istediginiz ogrencinin yasini giriniz");
             int ogrenciYas = input.nextInt();
             Ogrenci ogrenci = new Ogrenci(ogrenciIsim,ogrenciSoyIsim,sinif,ogrenciNo,ogrenciYas);
-            //ogrenciMap.put(Ogrenci.ogrenciKimlikNo,ogrenci);
 
             if (!ogrenciMap.containsKey(ogrencikimlik)){
                 ogrenciMap.put(ogrencikimlik,ogrenci);
@@ -107,29 +106,31 @@ import java.util.Scanner;
         }
 
 
-//        public static void ogrenciSil(){
-//            System.out.println("Lutfen silmek istediginiz ogrencinin kimlik numarasini giriniz");
-//            String silKimlik = input.next();
-//
-//            if(ogrenciMap.get()//equals(silKimlik)){
-//                ogrenciMap.remove(ogrenciMap.containsKey(silKimlik));
-//                System.out.println("Ogrenci basariyla silindi");
-//            }else {
-//                System.out.println("Bu kimlik numarasina ait ogrenci bulunmamaktadir, silme islemi basarisiz.");
-//            }
-//
-//            System.out.println("Baska bir ogrenciyi silmek icin S'yi\nMenuye donmek icin M'yi seciniz");
-//            String secim2 = input.next();
-//            if (secim2.equalsIgnoreCase("S")){
-//                ogrenciSil();
-//            } else if (secim2.equalsIgnoreCase("M")) {
-//                Methodlar.islemlerMenuOgrenci();
-//            }else{
-//                System.out.println("Hatali giris yaptiniz.");
-//                ogrenciSil();
-//            }
-//
-//        }
+        public static void ogrenciSil(){
+            System.out.println("Lutfen silmek istediginiz ogrencinin kimlik numarasini giriniz");
+            String silKimlik = input.next();
+
+
+                if(ogrenciMap.containsKey(silKimlik)){
+                       ogrenciMap.remove(silKimlik);
+                    System.out.println("Ogrenci basariyla silindi");
+                }else {
+                    System.out.println("Bu kimlik numarasina ait ogrenci bulunmamaktadir, silme islemi basarisiz.");
+                }
+
+
+            System.out.println("Baska bir ogrenciyi silmek icin S'yi\nMenuye donmek icin M'yi seciniz");
+            String secim2 = input.next();
+            if (secim2.equalsIgnoreCase("S")){
+                ogrenciSil();
+            } else if (secim2.equalsIgnoreCase("M")) {
+                Methodlar.islemlerMenuOgrenci();
+            }else{
+                System.out.println("Hatali giris yaptiniz.");
+                ogrenciSil();
+            }
+
+        }
 
 
 } // class

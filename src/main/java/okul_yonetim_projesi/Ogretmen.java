@@ -68,7 +68,7 @@ public class Ogretmen {
 
     @Override
     public String toString() {
-        return "Ogretmen Bilgileri: " +
+        return
                 "ogretmenAd='" + ogretmenAd + '\'' +
                 ", ogretmenSoyAd='" + ogretmenSoyAd + '\'' +
                 ", ogretmenBolum='" + ogretmenBolum + '\'' +

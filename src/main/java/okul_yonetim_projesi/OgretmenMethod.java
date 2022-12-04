@@ -24,7 +24,6 @@ public class OgretmenMethod {
         System.out.println("Lutfen eklemek istediginiz ogretmenin yasini giriniz");
         int ogretmenYas = input.nextInt();
         Ogretmen ogretmen = new Ogretmen(ogretmenIsim,ogretmenSoyIsim,bolum,ogretmenNo,ogretmenYas);
-        ogretmenMap.put(Ogretmen.ogretmenKimlikNo,ogretmen);
 
         if (!ogretmenMap.containsKey(ogretmenKimlik)){
             ogretmenMap.put(ogretmenKimlik,ogretmen);
@@ -99,7 +98,6 @@ public class OgretmenMethod {
         for (Map.Entry<String, Ogretmen> w: ogretmenMap.entrySet()){
             System.out.println(w);
         }
-
         System.out.println("Menuye donmek icin M'yi\nCikis yapmak icin Q'yu seciniz");
         String secim2 = input.next();
         if (secim2.equalsIgnoreCase("M")){
@@ -107,6 +105,7 @@ public class OgretmenMethod {
         } else{
             System.out.println("Cikis yapildi.");
         }
+        input.nextLine();
     }
 
 
@@ -114,25 +113,23 @@ public class OgretmenMethod {
         System.out.println("Lutfen silmek istediginiz ogretmenin kimlik numarasini giriniz");
         String silKimlik = input.next();
 
-        if(Ogretmen.ogretmenKimlikNo==silKimlik){
+        if(ogretmenMap.containsKey(silKimlik)){
             ogretmenMap.remove(silKimlik);
-            System.out.println("Ogretmen basariyla silindi.");
+            System.out.println("Ogretmen basariyla silindi");
         }else {
-            System.out.println("Bu kimlik numarasina ait ogretmen bulunmamaktadir, silme islemi basarisiz.");
+            System.out.println("Bu kimlik numarasina ait ogrenci bulunmamaktadir, silme islemi basarisiz.");
         }
 
-        System.out.println("Baska bir ogretmeni silmek icin S'yi\nMenuye donmek icin M'yi seciniz");
-        String secim2 = input.next();
-        if (secim2.equalsIgnoreCase("S")){
-            ogretmenSil();
-        } else if (secim2.equalsIgnoreCase("M")) {
-            Methodlar.islemlerMenuOgrenci();
-        }else{
-            System.out.println("Hatali giris yaptiniz.");
-            ogretmenSil();
+            System.out.println("Baska bir ogretmeni silmek icin S'yi\nMenuye donmek icin M'yi seciniz");
+            String secim2 = input.next();
+            if (secim2.equalsIgnoreCase("S")) {
+                ogretmenSil();
+            } else if (secim2.equalsIgnoreCase("M")) {
+                Methodlar.islemlerMenuOgretmen();
+            } else {
+                System.out.println("Hatali giris yaptiniz.");
+                ogretmenSil();
+            }
         }
-
-    }
-
 
 }//class

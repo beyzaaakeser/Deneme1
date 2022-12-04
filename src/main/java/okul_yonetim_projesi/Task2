@@ -1,4 +1,4 @@
-                            BİR OKUL YÖNETİM PLATFORMU KODLAYINIZ.
+BİR OKUL YÖNETİM PLATFORMU KODLAYINIZ.
 
 
 1.	Bu programda, Öğrenci ve Öğretmen Kayıtları ile ilgili işlemler yapılabilmelidir.
@@ -32,3 +32,5 @@ ekleme, ++++
 kimlik no ile silme ++++ ve arama ++++
 var olan tüm kişileri listeleme +++++ gibi işlemler yapılabilmelidir.
 Bunun yanında bir üst menüye ++++ dönme veya çıkış işlemleri +++++ de yapılabilmelidir.
+
+listeleyince silinen ogrenci de geliyor

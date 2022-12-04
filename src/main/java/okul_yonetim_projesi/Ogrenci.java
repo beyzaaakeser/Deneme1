@@ -3,14 +3,15 @@ package okul_yonetim_projesi;
 public class Ogrenci {
 
 
-    String ogrenciAd;
-    String ogrenciSoyAd;
-    String ogrenciKimlikNo;
-    String ogrenciSinif;
-    String ogrenciNo;
-    int ogrenciYas;
+    private String ogrenciAd;
+    private String ogrenciSoyAd;
+    private String ogrenciKimlikNo;
+    private String ogrenciSinif;
+    private String ogrenciNo;
+    private int ogrenciYas;
 
-    public Ogrenci(String ogrenciAd, String ogrenciSoyAd, String ogrenciSinif, String ogrenciNo, int ogrenciYas) {
+
+    public Ogrenci(String ogrenciAd, String ogrenciSoyAd, String ogrenciSinif, String ogrenciNo, int ogrenciYas){
         this.ogrenciAd = ogrenciAd;
         this.ogrenciSoyAd = ogrenciSoyAd;
         this.ogrenciSinif = ogrenciSinif;
@@ -18,11 +19,15 @@ public class Ogrenci {
         this.ogrenciYas = ogrenciYas;
     }
 
+    public Ogrenci(String ogrenciNo){
+        this.ogrenciNo = ogrenciNo;
+    }
+
     public String getOgrenciAd() {
         return ogrenciAd;
     }
 
-    public void setOgrenciAd(String ogrenciAd) {
+    public void setOgrenciAd() {
         this.ogrenciAd = ogrenciAd;
     }
 
@@ -30,7 +35,7 @@ public class Ogrenci {
         return ogrenciSoyAd;
     }
 
-    public void setOgrenciSoyAd(String ogrenciSoyAd) {
+    public void setOgrenciSoyAd() {
         this.ogrenciSoyAd = ogrenciSoyAd;
     }
 
@@ -38,7 +43,7 @@ public class Ogrenci {
         return ogrenciKimlikNo;
     }
 
-    public void setOgrenciKimlikNo(String ogrenciKimlikNo) {
+    public void setOgrenciKimlikNo() {
         this.ogrenciKimlikNo = ogrenciKimlikNo;
     }
 
@@ -46,7 +51,7 @@ public class Ogrenci {
         return ogrenciSinif;
     }
 
-    public void setOgrenciSinif(String ogrenciSinif) {
+    public void setOgrenciSinif() {
         this.ogrenciSinif = ogrenciSinif;
     }
 
@@ -54,7 +59,7 @@ public class Ogrenci {
         return ogrenciNo;
     }
 
-    public void setOgrenciNo(String ogrenciNo) {
+    public void setOgrenciNo()  {
         this.ogrenciNo = ogrenciNo;
     }
 
@@ -62,18 +67,18 @@ public class Ogrenci {
         return ogrenciYas;
     }
 
-    public void setOgrenciYas(int ogrenciYas) {
+    public void setOgrenciYas() {
         this.ogrenciYas = ogrenciYas;
     }
 
     @Override
     public String toString() {
-        return "Ogrenci Bilgileri : " +
+        return
                 "ogrenciAd='" + ogrenciAd + '\'' +
-                ", ogrenciSoyAd='" + ogrenciSoyAd + '\'' +
-                ", ogrenciSinif='" + ogrenciSinif + '\'' +
-                ", ogrenciNo='" + ogrenciNo + '\'' +
-                ", ogrenciYas=" + ogrenciYas;
+                        ", ogrenciSoyAd='" + ogrenciSoyAd + '\'' +
+                        ", ogrenciSinif='" + ogrenciSinif + '\'' +
+                        ", ogrenciNo='" + ogrenciNo + '\'' +
+                        ", ogrenciYas=" + ogrenciYas;
     }
 }
 
