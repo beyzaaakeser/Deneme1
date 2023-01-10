@@ -33,4 +33,3 @@ kimlik no ile silme ++++ ve arama ++++
 var olan tüm kişileri listeleme +++++ gibi işlemler yapılabilmelidir.
 Bunun yanında bir üst menüye ++++ dönme veya çıkış işlemleri +++++ de yapılabilmelidir.
 
-listeleyince silinen ogrenci de geliyor
